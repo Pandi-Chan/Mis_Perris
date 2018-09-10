@@ -105,4 +105,67 @@ $(function(){
 			return false;
 		}
 	});
+	
+	function check_run() {
+		var run_length = $("#run").val().length;
+		var campo = $("#run").val();
+		if(run_length < 8 || run_length == 0) {
+			$("#errorrun").html("Largo Invalido");
+			$("#errorrun").show();
+			error_run = true;
+		} else {
+			$("#errorrun").hide();
+		
+		
+			campo = campo.replace('-','');
+			campo = campo.replace(/\./g,'');
+
+			var suma = 0;
+			var caracteres = "1234567890kK";
+			var contador = 0;    
+			for (var i=0; i < campo.length; i++){
+				u = campo.substring(i, i + 1);
+				if (caracteres.indexOf(u) != -1)
+				contador ++;
+			}
+			if ( contador==0 ) { 			
+				$("#errorrun").html("No se admiten letras distintas a K");
+				$("#errorrun").show();
+				error_run = true;
+			} else {
+				$("#errorrun").hide();
+			
+			
+			var rut = campo.substring(0,campo.length-1)
+			var drut = campo.substring( campo.length-1 )
+			var dvr = '0';
+			var mul = 2;
+			
+			for (i= rut.length -1 ; i >= 0; i--) {
+				suma = suma + rut.charAt(i) * mul
+				if (mul == 7){
+					mul = 2
+				} else	{
+					mul++
+				}
+			}
+			res = suma % 11
+			if (res==1)	{
+				dvr = 'k'
+			}else if (res==0) {
+				dvr = '0'
+			}else {
+				dvi = 11-res
+				dvr = dvi + ""
+			}
+			if ( dvr != drut.toLowerCase() ) {
+				$("#errorrun").html("Run Invalido");
+				$("#errorrun").show();
+				error_run = true;
+			}else { 
+				$("#errorrun").hide();
+			}
+		}
+	}
+}
 });
