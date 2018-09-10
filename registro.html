@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="js/jquery.js"></script>
+        <link rel="stylesheet" href="css/formulario.css">
+        <title>Formulario Adopción Mis Perris</title>
+    </head>
+    <body>
+      <div class="contenedor">
+    		<header> <!--Cabecera de la Página-->
+    			<div class="logo">
+    				<img src="img/logo.png" alt="Logo">
+    				<a href="#">Mis Perris</a>
+    			</div>
+
+    			<nav> <!--Menú Superior-->
+    				<a href="index.html">Inicio</a>
+    				<a href="index.html#info">Quienes Somos</a>
+    				<a href="registro.html">Servicios</a>
+    				<a href="#">Contáctanos</a>
+    			</nav>
+    		</header>
+
+        <form id="registration_form" action="#" method="post">
+              <h1>Formulario para Adopción</h1>
+                <div>Correo Electrónico:<input type="email" class="form_text" name="email" id="email" required>
+                  <span class="error" id="erroremail"></span>
+                </div>
+
+                <div>Run : <input type="Run" class="form_text" id="Run" required>
+                  <span class="error" id="errorrun"></span>
+                </div>
+
+                <div>Nombre Completo : <input type="nombre" class="form_text" name="nombre" id="nombre" required>
+                  <span class="error" id="errornombre"></span>
+                </div>
+
+                  <div>Fecha de Nacimiento : <input type="date"></div>
+
+                  <div>Telefono de Contacto : <input type="Num"> </div>
+
+                  <div>Region :
+                  <select>
+                  <option value="Region de Arica y Parinacota">Region de Arica y Parinacota</option>
+
+                  </select>
+                  </div>
+
+                  <div>Ciudad :
+                  <select>
+                  <option value="Concepcion">Concepcion</option>
+                  </select>
+                  </div>
+
+                  <div>Tipo de Vivienda :
+                  <select>
+                  <option value="Casa">Casa</option>
+                  </select>
+                  </div>
+
+                    <input type="submit" value="Enviar" class="btn-enviar" id="btn-enviar">
+
+        </form>
+
+        <footer>
+          Desarrollo Web y Mobile
+        </footer>
+        </div>
+      <script src="js/verificar.js"></script>
+    </body>
+</html>

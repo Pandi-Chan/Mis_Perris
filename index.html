@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang=es>
+<head>
+    <meta charset="utf-8">
+    <title>Mis Perris</title><!--Nombre de la Página-->
+    <meta name="description" content="Pagina Mis Perris"><!--Utilizamos el descriptor en meta para apoyar la busqueda de contenidos en la web-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximun-scale=1.0,minimun-scale=1.0"><!--las escalas indican un punto inicial, la escala maxima y minima-->
+    <script src="js/prefix.js" type="test/javascript"></script><!--Script para asegurar que en todos los navegadores y dispositivos el sitio se vea igual-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script><!--Script del Carrusel-->
+    <link rel="stylesheet" href="css/index.css"> <!--Ruta para el Archivo Principal de Estilo-->
+    <link rel="stylesheet" href="css/jquery.bxslider.css"> <!--Ruta de Estilo del Carrusel-->
+</head>
+<body>
+	<div class="contenedor">
+		<header> <!--Cabecera de la Página-->
+			<div class="logo">
+				<img src="img/logo.png" alt="Logo">
+				<a href="#">Mis Perris</a>
+			</div>
+
+			<nav> <!--Menú Superior-->
+				<a href="index.html">Inicio</a>
+				<a href="#info">Quienes Somos</a>
+				<a href="registro.html">Servicios</a>
+				<a href="">Contáctanos</a>
+			</nav>
+		</header>
+
+		<!--Código del Carrusel-->
+  	<div class="carru">
+      <div id="carrusel">
+        <div><img src="img/carrusel/C1.jpg"><div id="txtimagen"> "Ahora Darwin está Tranquilo" <br> - Maria</div></div>
+        <div><img src="img/carrusel/C2.jpg"><div id="txtimagen"> "Es cómo tener un Hermanito"<br> - Ángelo</div></div>
+        <div><img src="img/carrusel/C3.jpg"><div id="txtimagen"> "Es Bueno que Existan Fundaciones Comprometidas con los Perritos"<br> - Luis</div></div>
+        <div><img src="img/carrusel/C4.jpg"><div id="txtimagen"> "Me Siento Completa con Puri"<br> - Elisa</div></div>
+      </div>
+    </div>
+
+			<!--Barra que va Bajo el Carrusel-->
+			<div class="barra">
+				<div><b>+ 56 9 98765431</b></div>
+				<div><b>Rescate y Adopción de Perros Callejeros</b></div>
+				<div class="social">
+          <a href="#"><img src="img/sociales/fb.png" alt="Logo Facebook" title="Facebook"></a>
+					<a href="#"><img src="img/sociales/gp.png" alt="Logo Google+" title="Google+"></a>
+					<a href="#"><img src="img/sociales/ig.png" alt="Logo Instagram" title="Instagram"></a>
+					<a href="#"><img src="img/sociales/em.png" alt="Logo Mensaje" title="Correo"></a>
+				</div>
+			</div>
+
+      <!--Contenedor de Zona de Información Sobre Rescate y Crowfunding-->
+		<div class="info" id="info">
+      <!--Zona de Rescate-->
+			<div class="rescate">
+				<div>
+          <h2>RESCATE</h2>
+          <h3>Etapa Uno</h3>
+          _______________
+          <p><br>Rescatamos Perros en Situación de Peligro y/o Abandono. Los Rehabilitamos y los Preparamos para
+            Buscarles un Hogar.</p>
+        </div>
+        <div><img src="img/happy.jpeg"></div>
+			</div>
+
+      <!--Zona de Crowfunding-->
+			<div class="funding">
+				<div><img src="img/comida.jpg"></div>
+				<div>
+          <h2>CROWDFUNDING</h2>
+  				<h3>FINANCIAMIENTO</h3>
+          _______________
+          <p><br>Sigue Nuestras Redes Sociales para Informarte Acerca de las Diversas Campañas y Actividades que
+            Realizamos para Obtener Financiamiento y Seguir Ayudando.</p>
+        </div>
+        <div>
+          <input type="button" id="campanas" name="campanas" value="Campañas">
+        </div>
+      </div>
+		</div>
+
+    <!--Zona de Galeria/Collage-->
+    <div class="galeria">
+			<div class="caja">
+				<img src="img/galeria/G1.jpg" alt="Imagen 1">
+				<img src="img/galeria/G2.jpg" alt="Imagen 2">
+				<img src="img/galeria/G3.jpg" alt="Imagen 3">
+			</div>
+			<div class="caja largo">
+				<img src="img/galeria/G4.jpg" alt="Imagen 4">
+				<img src="img/galeria/G5.jpg" alt="Imagen 5">
+			</div>
+			<div class="caja maslargo">
+				<img src="img/galeria/G7.jpg" alt="Imagen 6" id="larga">
+				<img src="img/galeria/G6.jpg" alt="Imagen 7">
+			</div>
+    </div>
+
+    <footer>
+      Desarrollo Web y Mobile
+    </footer>
+
+    <!--Script de Carrusel-->
+	  <script src="js/carrusel.js"></script>
+	</div>
+</body>
+</html>
